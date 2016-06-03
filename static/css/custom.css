@@ -1,3 +1,8 @@
+.application{
+    width:95%;
+    margin: 0 auto;
+
+}
 #number-projects-nd {
    font-size: 60px;
 }
@@ -6,11 +11,23 @@
    font-size: 60px;
 }
  
- #menu-select{
+#menu-select{
     float:none;
     text-align: center;
  }
- 
+
+#intro_button{
+    float:right;
+    margin:10px;
+ }
+
+span.introjs-helperNumberLayer{
+    padding:0px;
+    width:30px;
+    height:30px;
+    border-radius: 100%;
+    font-size:20px;
+}
  
 .dc-chart g.row text {
    fill: black;
@@ -60,3 +77,4 @@
    padding-bottom: 0px;
  
 }
+
