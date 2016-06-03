@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>School Donations Dashboard</title>
-   <link rel="stylesheet" href="./static/lib/css//bootstrap.min.css">
-   <link rel="stylesheet" href="./static/lib/css/keen-dashboards.css">
-   <link rel="stylesheet" href="./static/lib/css/dc.css">
-   <link rel="stylesheet" href="./static/css/custom.css">
+    <title>School Donations Dashboard</title>
+    <link rel="stylesheet" href="./static/lib/css//bootstrap.min.css">
+    <link rel="stylesheet" href="./static/lib/css/keen-dashboards.css">
+    <link rel="stylesheet" href="./static/lib/css/dc.css">
+    <link rel="stylesheet" href="./static/css/custom.css">
+
+    <link rel="stylesheet" href="./static/lib/css/introjs.min.css">
  
  </head>
 <body class="application">
@@ -15,6 +17,7 @@
        <div class="navbar-header">
            <a class="navbar-brand" href="./">School Donations Dashboard</a>
        </div>
+       <button class="btn btn-info intro_button" type="button" autofocus onclick="javascript:introJs().start();">Start Tour!</button>
    </div>
 </div>
  
@@ -28,7 +31,7 @@
  
                <!-- Time Chart -->
                <div class="col-sm-12">
-                   <div class="chart-wrapper">
+                   <div class="chart-wrapper" data-step="1" data-intro="A bar chart that shows total donations made over a time span" data-position="right" style="font-weight:normal">
                        <div class="chart-title">
                            Number of Donations
                        </div>
@@ -41,7 +44,7 @@
 
                       <!-- Poverty -->
                <div class="col-sm-6">
-                   <div class="chart-wrapper">
+                   <div class="chart-wrapper" data-step="2" data-intro="A row chart that shows the poverty level changes of schools" data-position="right" style="font-weight:normal">
                        <div class="chart-title">
                             Poverty Level
                        </div>
@@ -54,7 +57,7 @@
  
                <!-- Resources -->
                <div class="col-sm-6">
-                   <div class="chart-wrapper">
+                   <div class="chart-wrapper"data-step="3" data-intro="A row chart that shows the change in resources" data-position="right" style="font-weight:normal">
                        <div class="chart-title">
                            Resources Type
                        </div>
@@ -68,7 +71,7 @@
  
                <!-- funding Pie -->
                <div class="col-sm-6">
-                   <div class="chart-wrapper">
+                   <div class="chart-wrapper" data-step="4" data-intro="A pie chart that shows status of funds" data-position="right" style="font-weight:normal">
                        <div class="chart-title">
                            Funding Status
                        </div>
@@ -82,7 +85,7 @@
 
                <!--focusSubject Pie -->
                <div class="col-sm-6">
-                   <div class="chart-wrapper">
+                   <div class="chart-wrapper" data-step="5" data-intro="A pie chart that shows level of primary-focus-subject" data-position="right" style="font-weight:normal">
                        <div class="chart-title">
                            Primary Focus Subject
                        </div>
@@ -103,7 +106,7 @@
  
        <!-- menu select -->
        <div class="col-sm-3">
-           <div class="chart-wrapper">
+           <div class="chart-wrapper" data-step="6" data-intro="Dropdown menu enable to choose any(or all) state" data-position="right" style="font-weight:normal">
                <div class="chart-title">
                    Donation State
                </div>
@@ -116,7 +119,7 @@
  
        <!-- Metric 1 -->
        <div class="col-sm-3">
-           <div class="chart-wrapper">
+           <div class="chart-wrapper"data-step="7" data-intro="Total donations of selected state" data-position="right" style="font-weight:normal">
                <div class="chart-title">
                    Total Number of Donations
                </div>
@@ -137,7 +140,7 @@
  
        <!-- Metric 2 -->
        <div class="col-sm-3">
-           <div class="chart-wrapper">
+           <div class="chart-wrapper" data-step="8" data-intro="Value of donations for the selected state in USD" data-position="right" style="font-weight:normal">
                <div class="chart-title">
                    Total Donations in USD
                </div>
@@ -161,8 +164,9 @@
 <script src="./static/lib/js/d3.js"></script>
 <script src="./static/lib/js/dc.js"></script>
 <script src="./static/lib/js/queue.js"></script>
- 
+
 <script src="./static/lib/js/keen.min.js"></script>
+<script src="./static/lib/js/intro.min.js"></script>
 <script src='./static/js/graph.js' type='text/javascript'></script>
 </body>
 </html>
