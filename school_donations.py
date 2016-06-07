@@ -5,9 +5,10 @@ import json
 
 app = Flask(__name__)
 
-MONGODB_HOST = 'localhost'
-MONGODB_PORT = 27017
-DBS_NAME = 'donorsUSA'
+MONGODB_HOST = 'ds025583.mlab.com'
+MONGODB_PORT = 25583
+DBS_NAME = 'heroku_535r4x0f'
+MONGO_URI = 'mongodb://root:test123@ds025583.mlab.com:25583/heroku_535r4x0f'
 COLLECTION_NAME = 'projects'
 FIELDS = {'funding_status': True, 'school_state': True, 'resource_type': True, 'poverty_level': True,
           'date_posted': True, 'total_donations': True, '_id': False, 'primary_focus_subject': True }
@@ -19,9 +20,9 @@ def index():
 
 @app.route('/donorsUS/projects')
 def donor_projects():
-    connection = MongoClient(MONGODB_HOST, MONGODB_PORT)
+    connection = MongoClient(MONGO_URI)
     collection = connection[DBS_NAME][COLLECTION_NAME]
-    projects = collection.find(projection=FIELDS, limit=55000)
+    projects = collection.find(projection=FIELDS, limit=20000)
     json_projects = []
     for project in projects:
         json_projects.append(project)
