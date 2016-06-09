@@ -134,4 +134,5 @@ function makeGraphs(error, projectsJson) {
         .group(numProjectsByFocusSubject);
 
     dc.renderAll();
+    $('#loading').hide();
 }
