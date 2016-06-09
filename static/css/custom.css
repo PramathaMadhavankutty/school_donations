@@ -34,7 +34,18 @@ span.introjs-helperNumberLayer{
    font-size: 12px;
 }
 
+#loading{
+    z-index: 1000;
+    background-color: #eee;
+    color: #3d4a57;
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    text-align:center;
+    left: 0;
+    padding-top: 15%;
 
+}
  
 #total-projects {
    background: #33CC99;
