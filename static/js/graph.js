@@ -105,20 +105,20 @@ function makeGraphs(error, projectsJson) {
         .xAxisLabel("Year")
         .yAxis().ticks(4);
     resourceTypeChart
-        .width(300)
+        .width(270)
         .height(250)
         .dimension(resourceTypeDim)
         .group(numProjectsByResourceType)
         .xAxis().ticks(4);
     povertyLevelChart
-        .width(300)
+        .width(270)
         .height(250)
         .dimension(povertyLevelDim)
         .group(numProjectsByPovertyLevel)
         .xAxis().ticks(4);
 
     fundingStatusChart
-        .height(100)
+        .height(200)
         .radius(90)
         .innerRadius(30)
         .transitionDuration(1500)
@@ -126,7 +126,7 @@ function makeGraphs(error, projectsJson) {
         .group(numProjectsByFundingStatus);
 
     focusSubjectChart
-        .height(100)
+        .height(200)
         .radius(90)
         .innerRadius(30)
         .transitionDuration(1500)
