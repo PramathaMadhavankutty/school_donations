@@ -119,16 +119,16 @@ function makeGraphs(error, projectsJson) {
 
     fundingStatusChart
         .height(200)
-        .radius(90)
-        .innerRadius(30)
+        .radius(100)
+        .innerRadius(40)
         .transitionDuration(1500)
         .dimension(fundingStatus)
         .group(numProjectsByFundingStatus);
 
     focusSubjectChart
         .height(200)
-        .radius(90)
-        .innerRadius(30)
+        .radius(100)
+        .innerRadius(40)
         .transitionDuration(1500)
         .dimension(focusSubjectDim)
         .group(numProjectsByFocusSubject);
