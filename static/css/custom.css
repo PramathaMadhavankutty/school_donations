@@ -45,10 +45,11 @@ span.introjs-helperNumberLayer{
     left: 0;
     padding-top: 15%;
 
+
 }
  
 #total-projects {
-   background: #33CC99;
+   background: hotpink;
    width: 200px;
    position: relative;
    height: 60px;
