@@ -34,8 +34,8 @@
     <div class="row">
 
         <!-- menu select -->
-        <div class="col-sm-4">
-           <div class="chart-wrapper" data-step="6" data-intro="Dropdown menu enable to choose any(or all) state" data-position="right" style="font-weight:normal">
+        <div class="col-sm-12">
+           <div class="chart-wrapper" data-step="1" data-intro="Dropdown menu enable to choose any(or all) state" data-position="bottom" style="font-weight:normal">
                <div class="chart-title">
                    Select State
                </div>
@@ -44,22 +44,78 @@
                </div>
            </div>
         </div>
+    </div>
         <!-- menu select -->
-        <!-- Metric 1 -->
-        <div class="col-sm-4">
-           <div class="chart-wrapper" data-step="8" data-intro="Value of donations for the selected state in USD" data-position="left" style="font-weight:normal">
-               <div class="chart-title">
-                   Total Donations in USD
+        <!-- Time Chart -->
+        <div class="row">
+               <div class="col-sm-12">
+                   <div class="chart-wrapper" data-step="2" data-intro="A bar chart that shows total donations made over a time span" data-position="top" style="font-weight:normal">
+                       <div class="chart-title">
+                          Year and Number of Donations
+                       </div>
+                       <div class="chart-stage">
+                           <div id="time-chart"></div>
+                       </div>
+                   </div>
                </div>
-               <div class="chart-stage">
-                   <div id="total-donations-nd"></div>
+        <!-- Time Chart -->
+    </div>
+    <div class="row">
+                <!-- funding Pie -->
+                <div class="col-sm-3">
+                   <div class="chart-wrapper" data-step="3" data-intro="A pie chart that shows status of funds" data-position="right" style="font-weight:normal">
+                       <div class="chart-title">
+                           Funding Status
+                       </div>
+                       <div class="chart-stage">
+                           <div id="funding-chart"></div>
+                       </div>
+                   </div>
+                </div>
+                <!-- funding Pie -->
+                <!--focusSubject Pie -->
+               <div class="col-sm-3">
+                   <div class="chart-wrapper" data-step="4" data-intro="A pie chart that shows level of primary-focus-subject" data-position="left" style="font-weight:normal">
+                       <div class="chart-title">
+                           Primary Focus Subject
+                       </div>
+                       <div class="chart-stage">
+                           <div id="focus-subject-chart"></div>
+                       </div>
+                   </div>
                </div>
-           </div>
+               <!--focusSubject Pie -->
+                <!-- Poverty -->
+               <div class="col-sm-3">
+                   <div class="chart-wrapper" data-step="5" data-intro="A row chart that shows the poverty level changes of schools" data-position="right" style="font-weight:normal">
+                       <div class="chart-title">
+                            Poverty Level
+                       </div>
+                       <div class="chart-stage">
+                            <div id="poverty-level-row-chart"></div>
+                       </div>
+                   </div>
+               </div>
+               <!-- Poverty -->
+
+        <!-- Resources -->
+        <div class="col-sm-3">
+            <div class="chart-wrapper"data-step="6" data-intro="A row chart that shows the change in resources" data-position="left" style="font-weight:normal">
+                <div class="chart-title">
+                    Resources Type
+                </div>
+                <div class="chart-stage">
+                    <div id="resource-type-row-chart"></div>
+                </div>
+            </div>
         </div>
-        <!-- Metric 1 -->
-       <!-- Metric 2 -->
-       <div class="col-sm-4">
-           <div class="chart-wrapper"data-step="7" data-intro="Total donations of selected state" data-position="left" style="font-weight:normal">
+        <!-- Resources -->
+    </div>
+    <div class="row">
+
+        <!-- Metric 2 -->
+        <div class="col-sm-6">
+           <div class="chart-wrapper"data-step="7" data-intro="Total donations of selected state" data-position="top" style="font-weight:normal">
                <div class="chart-title">
                    Total Number of Donations
                </div>
@@ -71,93 +127,49 @@
                    text-align: center;
                    padding-top: 12px;
                    padding-bottom: 0px;">
-
                    <div id="number-projects-nd"></div>
                </div>
            </div>
-       </div>
-       <!-- Metric 2 -->
+        </div>
+        <!-- Metric 2 -->
+              <!-- Metric 1 -->
 
+                <div class="col-sm-6">
+                    <div class="chart-wrapper" data-step="8" data-intro="Value of donations for the selected state in USD" data-position="top" style="font-weight:normal">
+                        <div class="chart-title">
+                            Total Donations in USD
+                        </div>
+                        <div class="chart-stage">
+                            <div id="total-donations-nd"></div>
+                        </div>
+                    </div>
+                </div>
+        <!-- Metric 1 -->
+    </div>
+
+
+<!-- ======================= -->
 
 
 
  
        <div class="col-sm-8">
-           <div class="row">
- 
-               <!-- Time Chart -->
-               <div class="col-sm-12">
-                   <div class="chart-wrapper" data-step="1" data-intro="A bar chart that shows total donations made over a time span" data-position="right" style="font-weight:normal">
-                       <div class="chart-title">
-                          Year and Number of Donations
-                       </div>
-                       <div class="chart-stage">
-                           <div id="time-chart"></div>
-                       </div>
-                   </div>
-               </div>
-           </div>
-               <!-- Time Chart -->
-               <!-- funding Pie -->
-           <div class="row">
-               <div class="col-sm-4">
-                   <div class="chart-wrapper" data-step="4" data-intro="A pie chart that shows status of funds" data-position="right" style="font-weight:normal">
-                       <div class="chart-title">
-                           Funding Status
-                       </div>
-                       <div class="chart-stage">
-                           <div id="funding-chart"></div>
-                       </div>
-                   </div>
-               </div>
-               <!-- funding Pie -->
 
-
-       </div>
-
-
-                      <!-- Poverty -->
-               <div class="col-sm-6">
-                   <div class="chart-wrapper" data-step="2" data-intro="A row chart that shows the poverty level changes of schools" data-position="right" style="font-weight:normal">
-                       <div class="chart-title">
-                            Poverty Level
-                       </div>
-                       <div class="chart-stage">
-                            <div id="poverty-level-row-chart"></div>
-                       </div>
-                   </div>
-               </div>
-               <!-- Poverty -->
- 
-               <!-- Resources -->
-               <div class="col-sm-6">
-                   <div class="chart-wrapper"data-step="3" data-intro="A row chart that shows the change in resources" data-position="right" style="font-weight:normal">
-                       <div class="chart-title">
-                           Resources Type
-                       </div>
-                       <div class="chart-stage">
-                           <div id="resource-type-row-chart"></div>
-                       </div>
-                   </div>
-               </div>
-               <!-- Resources -->
- 
  
 
 
 
-               <!--focusSubject Pie -->
-               <div class="col-sm-3">
-                   <div class="chart-wrapper" data-step="5" data-intro="A pie chart that shows level of primary-focus-subject" data-position="right" style="font-weight:normal">
-                       <div class="chart-title">
-                           Primary Focus Subject
-                       </div>
-                       <div class="chart-stage">
-                           <div id="focus-subject-chart"></div>
-                       </div>
-                   </div>
-               </div>
-               <!--focusSubject Pie -->
+
+
+
+
+
+
+ 
+
+
+
+
 
 
  
@@ -169,7 +181,7 @@
 
 
    </div>
-</div>
+
  
 <hr>
 <p class="small text-muted"> Dashboard created by Pramatha Madhavankutty</p>
