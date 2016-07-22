@@ -105,13 +105,13 @@ function makeGraphs(error, projectsJson) {
         .xAxisLabel("Year")
         .yAxis().ticks(4);
     resourceTypeChart
-        .width(270)
+        .width(300)
         .height(250)
         .dimension(resourceTypeDim)
         .group(numProjectsByResourceType)
         .xAxis().ticks(4);
     povertyLevelChart
-        .width(270)
+        .width(300)
         .height(250)
         .dimension(povertyLevelDim)
         .group(numProjectsByPovertyLevel)

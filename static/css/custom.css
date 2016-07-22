@@ -36,7 +36,7 @@ span.introjs-helperNumberLayer{
 
 #loading{
     z-index: 1000;
-    background-color: #eee;
+    background-color:#bce8f1;
     color: #3d4a57;
     position:fixed;
     height: 100%;
@@ -49,7 +49,7 @@ span.introjs-helperNumberLayer{
 }
  
 #total-projects {
-   background: hotpink;
+   background: #33CC99;
    width: 200px;
    position: relative;
    height: 60px;
