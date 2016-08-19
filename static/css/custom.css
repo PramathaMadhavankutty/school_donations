@@ -36,7 +36,7 @@ span.introjs-helperNumberLayer{
 
 #loading{
     z-index: 1000;
-    background-color:#0088cc;
+    background-image: url("static/images/help.jpg");
     color: #3d4a57;
     position:fixed;
     height: 100%;
